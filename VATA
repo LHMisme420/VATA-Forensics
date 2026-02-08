@@ -1,1 +1,5 @@
-
+vata/
+├── __init__.py          # empty or with version
+├── provenance.py        # main functions: load_artifact, check_hash, verify_integrity, etc.
+├── utils.py             # helpers: hashing, loading models/datasets
+└── config.py            # constants, paths, thresholds
