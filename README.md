@@ -1,15 +1,20 @@
-# VATA-Forensics
+# VATA-Forensics / Sovereign Forensics Suite
 
-Tools for verifying provenance and integrity of AI training artifacts.
+Tamper-evident provenance for AI artifacts & outputs. Math > opinions.
 
-- Scoring model for artifact classification
-- Groth16 zk-SNARK proofs for private verification
-- On-chain verifier (Solidity)
+- Groth16 zk-SNARKs for private integrity proofs
+- On-chain anchoring (Ethereum mainnet txs live)
+- Local verification scripts (Node.js + ethers.js)
+- Manifest anchoring demo (JSON → hash → compare to calldata root)
 
-Core files:
-- PROJECT_PRINCIPLES.md
-- SPEC_ARTIFACT_FORMAT.md
-- Verifier.sol (Groth16 verifier)
-- groth16_circuit.md + setup_commands.sh + sample_calldata.txt
+Quick Start:
+1. Clone: git clone https://github.com/LHMisme420/VATA-Forensics.git
+2. npm install ethers
+3. node scripts/verify_manifest.mjs sfs_manifest.json  # VERIFIED 🟢
+4. Edit file → rerun → FAIL 🔴
 
-(Add vata/ folder, score.py, etc. in next commits)
+Live mainnet anchors:
+- FULL MANIFEST root: 0xdcc2d86eb896f827c78480c2ea2c8d96dc65a7ad3603e0bcc1bdb4d54660ef2b
+- Latest tx: 0x579b3caa3061836fad2f1590dea3c99855a6bd2ba77510584ebf61ba67b1311b (self-call calldata)
+
+Builders: Fork & anchor your own. Orgs: DM @Lhmisme for API/license.
