@@ -1,0 +1,24 @@
+{
+  "name": "vata-forensics",
+  "version": "1.0.0",
+  "description": "Tools for verifying provenance and integrity of AI training artifacts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LHMisme420/VATA-Forensics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LHMisme420/VATA-Forensics/issues"
+  },
+  "homepage": "https://github.com/LHMisme420/VATA-Forensics#readme",
+  "dependencies": {
+    "ethers": "^6.16.0"
+  }
+}
