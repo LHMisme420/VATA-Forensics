@@ -1,4 +1,6 @@
 # VATA-Forensics / Sovereign Forensics Suite
+**VATA VERIFIED ✅** = file SHA-256 matches on-chain tx calldata (input).
+
 
 Tamper-evident provenance for AI artifacts & outputs. Math > opinions.
 
