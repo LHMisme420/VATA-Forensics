@@ -1,81 +1,20 @@
-# VATA Forensics
-Verifiable AI & Truth Anchoring
+# VATA-Forensics / Sovereign Forensics Suite
 
-Open forensic infrastructure for proving the existence and integrity of digital data using deterministic hashing and public blockchain anchoring.
+Tamper-evident provenance for AI artifacts & outputs. Math > opinions.
 
----
+- Groth16 zk-SNARKs for private integrity proofs
+- On-chain anchoring (Ethereum mainnet txs live)
+- Local verification scripts (Node.js + ethers.js)
+- Manifest anchoring demo (JSON → hash → compare to calldata root)
 
-## What This Is
+Quick Start:
+1. Clone: git clone https://github.com/LHMisme420/VATA-Forensics.git
+2. npm install ethers
+3. node scripts/verify_manifest.mjs sfs_manifest.json  # VERIFIED 🟢
+4. Edit file → rerun → FAIL 🔴
 
-VATA Forensics is a minimal, reproducible pipeline:
+Live mainnet anchors:
+- FULL MANIFEST root: 0xdcc2d86eb896f827c78480c2ea2c8d96dc65a7ad3603e0bcc1bdb4d54660ef2b
+- Latest tx: 0x579b3caa3061836fad2f1590dea3c99855a6bd2ba77510584ebf61ba67b1311b (self-call calldata)
 
-Capture → Normalize → Hash → Anchor → Verify
-
-If data existed at a point in time, it can be proven.
-
-No trust in people.
-No trust in platforms.
-Only math.
-
----
-
-## Why This Exists
-
-Digital narratives can be edited, deleted, or rewritten.
-
-VATA Forensics provides a public, cryptographic method to:
-
-- Prove a dataset existed
-- Prove it has not changed
-- Allow anyone to independently verify
-
-This is forensic-grade proof-of-existence.
-
----
-
-## Core Workflow
-
-1. Capture raw data (HAR, JSON, logs, files)
-2. Convert into structured dataset (CSV)
-3. Compute SHA-256 hash
-4. Embed hash into Ethereum transaction calldata
-5. Anyone verifies by re-hashing and comparing
-
----
-
-## Example: Moltbook Forensics Run
-
-Dataset Hash (SHA-256):
-
-b2bdf74d7a6a2713722d7664ad636cf85a4faf503fe7bdcda86aef576d358660
-
-Anchored on Ethereum Sepolia:
-
-0xf5c2e4fa7a4382fd4a161eead51dc195fde5e0f71fdb95826763d14f4cae1528
-
----
-
-## Verifying
-
-1. Recreate dataset
-2. Hash with SHA-256
-3. Inspect transaction calldata
-4. Confirm hash matches
-
-If equal → dataset integrity proven.
-
----
-
-## Philosophy
-
-Proof > Authority  
-Math > Narratives  
-Verification > Persuasion  
-
-VATA Forensics is open, neutral, and censorship-resistant.
-
----
-
-## License
-
-MIT
+Builders: Fork & anchor your own. Orgs: DM @Lhmisme for API/license.
