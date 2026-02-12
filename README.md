@@ -1,5 +1,10 @@
 # VATA-Forensics / Sovereign Forensics Suite
 **VATA VERIFIED ✅** = file SHA-256 matches on-chain tx calldata (input).
+## One-liner Verify (no deps)
+
+```powershell
+python verifier\verify_tx_min.py <PATH_TO_FILE> <TX_HASH> https://ethereum-sepolia-rpc.publicnode.com
+
 
 
 Tamper-evident provenance for AI artifacts & outputs. Math > opinions.
