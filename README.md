@@ -25,3 +25,5 @@ Live mainnet anchors:
 - Latest tx: 0x579b3caa3061836fad2f1590dea3c99855a6bd2ba77510584ebf61ba67b1311b (self-call calldata)
 
 Builders: Fork & anchor your own. Orgs: DM @Lhmisme for API/license.
+
+![Verify Ledger](https://github.com/LHMisme420/VATA-Forensics/actions/workflows/verify-ledger.yml/badge.svg)
