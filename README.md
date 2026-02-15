@@ -38,3 +38,20 @@ cd vata_bundle_mainnet_a652865c
 If any byte of the proof file changes, verification fails.
 
 Verify. Don’t trust.
+
+
+## 30-Second Verification (epoch2)
+
+Merkle Root (44 files):
+0x013a92494483dc611422b9022adebe1464ae88e2a8d0a410dffe43fb7f9fc6ed
+
+Ethereum Mainnet Anchor Tx:
+0x8c30e83d516406aa09af769e5a9b15e65a025bbb6fa543623d1090aa2ad9749b
+
+Verify a file is included and anchored:
+
+```powershell
+.\tools\verify_against_mainnet.ps1 `
+  -FilePath .\bundles\epoch2\evidence_manifest.json `
+  -ProofJsonPath .\bundles\epoch2\merkle\proofs\evidence_manifest.json.proof.json `
+  -Tx 0x8c30e83d516406aa09af769e5a9b15e65a025bbb6fa543623d1090aa2ad9749b
