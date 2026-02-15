@@ -1,0 +1,14 @@
+﻿{
+  "epoch": "epoch2",
+  "file_count": 44,
+  "merkle_root": "0x013a92494483dc611422b9022adebe1464ae88e2a8d0a410dffe43fb7f9fc6ed",
+  "anchor": {
+    "chain": "ethereum",
+    "network": "mainnet",
+    "tx_hash": "0x8c30e83d516406aa09af769e5a9b15e65a025bbb6fa543623d1090aa2ad9749b",
+    "block_number_hex": "0x1754b99",
+    "block_number": 24492953,
+    "status": "0x1",
+    "to": "0x0000000000000000000000000000000000000000"
+  }
+}
