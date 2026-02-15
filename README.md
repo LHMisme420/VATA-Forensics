@@ -1,29 +1,36 @@
-# VATA-Forensics / Sovereign Forensics Suite
-**VATA VERIFIED ✅** = file SHA-256 matches on-chain tx calldata (input).
-## One-liner Verify (no deps)
+﻿# VATA Forensics — Verifiable AI Truth Anchors
 
-```powershell
-python verifier\verify_tx_min.py <PATH_TO_FILE> <TX_HASH> https://ethereum-sepolia-rpc.publicnode.com
+This repository publishes a cryptographically verifiable evidence bundle
+demonstrating immutable anchoring of a forensic proof hash to Ethereum mainnet.
 
+## Evidence Bundle
 
+vata_bundle_mainnet_a652865c/
 
-Tamper-evident provenance for AI artifacts & outputs. Math > opinions.
+Contains:
 
-- Groth16 zk-SNARKs for private integrity proofs
-- On-chain anchoring (Ethereum mainnet txs live)
-- Local verification scripts (Node.js + ethers.js)
-- Manifest anchoring demo (JSON → hash → compare to calldata root)
+- forensic_proof.bin  
+- evidence_manifest.json  
+- verify_all.ps1  
+- evidence/*.csv  
 
-Quick Start:
-1. Clone: git clone https://github.com/LHMisme420/VATA-Forensics.git
-2. npm install ethers
-3. node scripts/verify_manifest.mjs sfs_manifest.json  # VERIFIED 🟢
-4. Edit file → rerun → FAIL 🔴
+## Mainnet Anchor
 
-Live mainnet anchors:
-- FULL MANIFEST root: 0xdcc2d86eb896f827c78480c2ea2c8d96dc65a7ad3603e0bcc1bdb4d54660ef2b
-- Latest tx: 0x579b3caa3061836fad2f1590dea3c99855a6bd2ba77510584ebf61ba67b1311b (self-call calldata)
+Tx:
+0xa652865c1d2474890d402547384263f6e8eb04ca11fc504558d994a8a96888ca
 
-Builders: Fork & anchor your own. Orgs: DM @Lhmisme for API/license.
+Proof Hash:
+0x6a54c7d51f1c3140c23dd06e40985acde8a4c3ca53aabfebc20b314ab83d002b
 
-![Verify Ledger](https://github.com/LHMisme420/VATA-Forensics/actions/workflows/verify-ledger.yml/badge.svg)
+Calldata:
+0x56415441 || <proofHash>
+
+## Verify (PowerShell)
+
+$env:RPC="https://ethereum-rpc.publicnode.com"
+cd vata_bundle_mainnet_a652865c
+.\verify_all.ps1
+
+If any byte of the proof file changes, verification fails.
+
+Verify. Don’t trust.
