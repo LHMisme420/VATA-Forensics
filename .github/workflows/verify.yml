@@ -1,0 +1,36 @@
+name: Verify (pwsh verify.ps1)
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  verify-windows:
+    name: Windows verify (Foundry + PowerShell)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Foundry (cast)
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: stable
+
+      - name: Sanity: Foundry version
+        run: |
+          cast --version
+          forge --version
+
+      - name: Run one-command verification
+        shell: pwsh
+        env:
+          RPC: https://ethereum-rpc.publicnode.com
+        run: |
+          pwsh -NoProfile -ExecutionPolicy Bypass -File .\verify.ps1
