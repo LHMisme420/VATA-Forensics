@@ -1,0 +1,18 @@
+﻿# Ignore build/output noise
+.cargo/
+target/
+src/
+*.log
+*.bin
+*.bak
+*.txt
+input.txt
+nova_out.txt
+run_*.log
+Cargo.toml
+Cargo.toml.bak
+make_bundle.ps1
+
+# Keep the public bundle + zip only
+!vata_bundle_mainnet_a652865c/**
+!vata_bundle_mainnet_a652865c.zip
