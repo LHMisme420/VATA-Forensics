@@ -1,4 +1,7 @@
-﻿# VATA Forensics — Verifiable AI Truth Anchors
+﻿![Verify Ledger](https://github.com/LHMisme420/VATA-Forensics/actions/workflows/verify.yml/badge.svg)
+
+
+# VATA Forensics — Verifiable AI Truth Anchors
 
 This repository publishes a cryptographically verifiable evidence bundle
 demonstrating immutable anchoring of a forensic proof hash to Ethereum mainnet.
