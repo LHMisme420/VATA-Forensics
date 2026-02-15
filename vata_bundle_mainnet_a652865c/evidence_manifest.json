@@ -1,0 +1,22 @@
+﻿{
+    "schema":  "vata.evidence_bundle.v1",
+    "generated_utc":  "2026-02-15 08:24:40 UTC",
+    "rpc":  "https://ethereum-rpc.publicnode.com",
+    "chain_anchor":  {
+                         "tx_hash":  "0xa652865c1d2474890d402547384263f6e8eb04ca11fc504558d994a8a96888ca",
+                         "block":  "24459050",
+                         "contract":  "0x32506a2b5bd991c904ca733CBf6f8FD0183BA6Ce",
+                         "onchain_input":  "0x564154416a54c7d51f1c3140c23dd06e40985acde8a4c3ca53aabfebc20b314ab83d002b",
+                         "expected_input":  "0x564154416a54c7d51f1c3140c23dd06e40985acde8a4c3ca53aabfebc20b314ab83d002b",
+                         "vata_prefix":  "0x56415441"
+                     },
+    "proof":  {
+                  "file":  "forensic_proof.bin",
+                  "bytes":  12324,
+                  "sha256":  "3d4c16b14cf4ffc2a460a189efd52edecdf4fda8083ea834c6869aee8be3f205",
+                  "proof_hash":  "0x6a54c7d51f1c3140c23dd06e40985acde8a4c3ca53aabfebc20b314ab83d002b"
+              },
+    "evidence_items":  [
+
+                       ]
+}

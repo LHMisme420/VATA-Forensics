@@ -1,0 +1,8 @@
+﻿{
+    "cast_verify_cmd":  "cast wallet verify --address 0x32506a2b5bd991c904ca733CBf6f8FD0183BA6Ce --no-hash 0xdd0395ad96e5b946c80448ee7b2d9f1f84f070c9cb539fe8e59f0388249a9cb8 \u003csignature\u003e",
+    "signature":  "0x654648e07fe445f3fa79f4f640bdbda9e2a69fc0737743468b1fd29c956d533d3ab27d98493ac6705d268d0d8dba75b41ea2066d85236b228088c264d16066331b",
+    "manifest_sha256":  "dd0395ad96e5b946c80448ee7b2d9f1f84f070c9cb539fe8e59f0388249a9cb8",
+    "generated_utc":  "2026-02-15 08:31:57 UTC",
+    "digest_hex":  "0xdd0395ad96e5b946c80448ee7b2d9f1f84f070c9cb539fe8e59f0388249a9cb8",
+    "signer_address":  "0x32506a2b5bd991c904ca733CBf6f8FD0183BA6Ce"
+}
