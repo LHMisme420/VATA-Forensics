@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿# Ignore build/output noise
 .cargo/
 target/
@@ -16,3 +17,16 @@ make_bundle.ps1
 # Keep the public bundle + zip only
 !vata_bundle_mainnet_a652865c/**
 !vata_bundle_mainnet_a652865c.zip
+=======
+# build / output artifacts
+out_*/
+out_moltbook_run03/
+
+# python / node junk
+__pycache__/
+*.pyc
+node_modules/
+
+# secrets
+.env
+>>>>>>> e0f0dfd (Add verifier tooling and Docker scaffolding)

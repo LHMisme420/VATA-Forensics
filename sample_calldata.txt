@@ -1,3 +1,0 @@
-// Example calldata for Solidity verifier (from snarkjs groth16 export soliditycalldata proof.json public.json)
-[proof_a_x, proof_a_y], [[proof_b_x_0, proof_b_x_1], [proof_b_y_0, proof_b_y_1]], [proof_c_x, proof_c_y], [public_input_1, public_input_2]
-e.g., ["0x1...", "0x2..."], [["0x3...", "0x4..."], ["0x5...", "0x6..."]], ["0x7...", "0x8..."], ["0x9...", "0xa..."]
