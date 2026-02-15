@@ -1,4 +1,5 @@
-﻿![Verify Ledger](https://github.com/LHMisme420/VATA-Forensics/actions/workflows/verify.yml/badge.svg)
+﻿[![Verify Ledger](https://github.com/LHMisme420/VATA-Forensics/actions/workflows/verify.yml/badge.svg)](https://github.com/LHMisme420/VATA-Forensics/actions/workflows/verify.yml)
+
 
 
 # VATA Forensics — Verifiable AI Truth Anchors
