@@ -8,14 +8,14 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
-# 1) verify inclusion proof (local)
+# 1) Verify inclusion proof locally
 & "$PSScriptRoot\merkle_verify.ps1" -FilePath $FilePath -ProofJsonPath $ProofJsonPath
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
-# 2) load root from proof
+# 2) Load Merkle root from proof JSON
 $root = (Get-Content $ProofJsonPath -Raw | ConvertFrom-Json).root
 
-# 3) fetch on-chain calldata input
+# 3) Fetch on-chain calldata input from the anchor tx
 $input = (cast tx $Tx --rpc-url $Rpc | Select-String "input").ToString().Split()[-1].Trim()
 
 Write-Host "Proof root :" $root
