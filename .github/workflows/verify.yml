@@ -1,34 +1,30 @@
-name: Verify (pwsh verify.ps1)
+name: Verify Ledger
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   pull_request:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
-  release:
-    types: [published]
 
 jobs:
-  verify-windows:
-    name: Windows verify (Foundry + PowerShell)
+  verify:
     runs-on: windows-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Foundry (cast)
+      - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: stable
 
-      - name: Sanity: Foundry version
-        run: |
-          cast --version
-          forge --version
+      - name: Verify Foundry
+        run: cast --version
 
-      - name: Run one-command verification
+      - name: Run verification
         shell: pwsh
         env:
           RPC: https://ethereum-rpc.publicnode.com
