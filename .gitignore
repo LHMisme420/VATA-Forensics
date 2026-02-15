@@ -1,32 +1,26 @@
-<<<<<<< HEAD
-﻿# Ignore build/output noise
+# --- Build / output noise ---
 .cargo/
 target/
 src/
-*.log
-*.bin
-*.bak
-*.txt
-input.txt
-nova_out.txt
-run_*.log
-Cargo.toml
-Cargo.toml.bak
-make_bundle.ps1
-
-# Keep the public bundle + zip only
-!vata_bundle_mainnet_a652865c/**
-!vata_bundle_mainnet_a652865c.zip
-=======
-# build / output artifacts
 out_*/
 out_moltbook_run03/
 
-# python / node junk
+# --- Logs / temporary ---
+*.log
+*.bin
+*.bak
+run_*.log
+nova_out.txt
+input.txt
+
+# --- Language / tooling junk ---
 __pycache__/
 *.pyc
 node_modules/
 
-# secrets
+# --- Secrets ---
 .env
->>>>>>> e0f0dfd (Add verifier tooling and Docker scaffolding)
+
+# --- Explicitly allow bundles (evidence artifacts) ---
+!bundles/**
+
